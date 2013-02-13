@@ -36,3 +36,16 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+# Gemfile for RSpec and Cucumber
+group :development, :test do
+  gem "rspec-rails", ">= 2.8.1"
+end
+
+group :test do
+  gem "factory_girl_rails", ">= 1.6.0"
+  gem "cucumber-rails", ">= 1.2.1"
+  gem "capybara", ">= 1.1.2"
+  gem "database_cleaner"
+  gem "launchy"
+end
